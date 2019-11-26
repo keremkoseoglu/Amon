@@ -1,0 +1,24 @@
+PODS:
+  - DJI-SDK-iOS (4.9.1)
+  - DJI-UXSDK-iOS (4.9)
+  - DJIWidget (1.5)
+
+DEPENDENCIES:
+  - DJI-SDK-iOS (~> 4.9.1)
+  - DJI-UXSDK-iOS (~> 4.9)
+  - DJIWidget (~> 1.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DJI-SDK-iOS
+    - DJI-UXSDK-iOS
+    - DJIWidget
+
+SPEC CHECKSUMS:
+  DJI-SDK-iOS: 2c7f4cc888909dd0996c4ae38bb25b979d76ce19
+  DJI-UXSDK-iOS: cc490b1095f2522791ba993a229525a72725ffc4
+  DJIWidget: 2fcc151ecbd1326cc6da0486701782f971fe5653
+
+PODFILE CHECKSUM: 52aa355a46324745649772cb01dc06f5f545620b
+
+COCOAPODS: 1.5.3

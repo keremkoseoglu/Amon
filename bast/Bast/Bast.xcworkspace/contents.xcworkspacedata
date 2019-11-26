@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../../amongst/amongst.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../Kerem/Development/Swift Library/EasyGUI/EasyGUI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../Kerem/Development/Swift Library/EasyHTTP/EasyHTTP.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../Kerem/Development/Swift Library/EasyTelegram/EasyTelegram.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Bastion/Bastion.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Bast.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
