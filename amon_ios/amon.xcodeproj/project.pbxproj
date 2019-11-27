@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C11B3832260481D002C723B /* TelegramCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C11B3822260481D002C723B /* TelegramCommunicator.swift */; };
+		0C11B39622609CD8002C723B /* Drone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C11B39522609CD8002C723B /* Drone.swift */; };
+		0C11B39A2260A1AB002C723B /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C11B3992260A1AB002C723B /* Project.swift */; };
+		0C11B39C2260AE76002C723B /* DroneRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C11B39B2260AE76002C723B /* DroneRequest.swift */; };
+		0C11B39E2260B394002C723B /* TelegramDroneStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C11B39D2260B394002C723B /* TelegramDroneStatus.swift */; };
+		0C3AB9672265BF1A007F7DD0 /* TelegramPhotoDownloadTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3AB9662265BF1A007F7DD0 /* TelegramPhotoDownloadTest.swift */; };
+		0C3AB9692265D646007F7DD0 /* TelegramProjectAbort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3AB9682265D646007F7DD0 /* TelegramProjectAbort.swift */; };
+		0C3AB96B2265D9FD007F7DD0 /* AbortProjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3AB96A2265D9FD007F7DD0 /* AbortProjectTest.swift */; };
+		0C456BC4226454580086BEAE /* DroneListRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C456BC3226454580086BEAE /* DroneListRequestTest.swift */; };
+		0C456BC622645B0A0086BEAE /* TelegramProjectSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C456BC522645B0A0086BEAE /* TelegramProjectSetup.swift */; };
+		0C456BC8226486B50086BEAE /* SetupDronesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C456BC7226486B50086BEAE /* SetupDronesTest.swift */; };
+		0C456BCA22649F6D0086BEAE /* TelegramProjectStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C456BC922649F6D0086BEAE /* TelegramProjectStart.swift */; };
+		0C456BCC2264A0A70086BEAE /* TelegramEmployedDronesTaskWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C456BCB2264A0A70086BEAE /* TelegramEmployedDronesTaskWorker.swift */; };
+		0C456BCE2264AB2E0086BEAE /* StartDronesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C456BCD2264AB2E0086BEAE /* StartDronesTest.swift */; };
+		0C456BD02264B58D0086BEAE /* TelegramDronePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C456BCF2264B58D0086BEAE /* TelegramDronePhoto.swift */; };
+		0C682F2B2283FD7400176EA0 /* amongst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C682F2A2283FD7400176EA0 /* amongst.framework */; };
+		0C682F2C2283FD7400176EA0 /* amongst.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C682F2A2283FD7400176EA0 /* amongst.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C80F28E22703E6D00EB6A8E /* EasyHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C80F28D22703E6D00EB6A8E /* EasyHTTP.framework */; };
+		0C80F28F22703E6D00EB6A8E /* EasyHTTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C80F28D22703E6D00EB6A8E /* EasyHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C80F2AF2270451E00EB6A8E /* EasyLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C80F2AE2270451E00EB6A8E /* EasyLocation.framework */; };
+		0C80F2B02270451E00EB6A8E /* EasyLocation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C80F2AE2270451E00EB6A8E /* EasyLocation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C80F2FD227055F900EB6A8E /* EasyTelegram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C80F2FC227055F900EB6A8E /* EasyTelegram.framework */; };
+		0C80F2FE227055F900EB6A8E /* EasyTelegram.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C80F2FC227055F900EB6A8E /* EasyTelegram.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C80F321227088B900EB6A8E /* EasyGUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C80F320227088B900EB6A8E /* EasyGUI.framework */; };
+		0C80F322227088B900EB6A8E /* EasyGUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C80F320227088B900EB6A8E /* EasyGUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C80F32C22708E1000EB6A8E /* TelegramDroneTaskWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C80F32B22708E1000EB6A8E /* TelegramDroneTaskWorker.swift */; };
+		0CBAFEDC226700D400C6377A /* MutCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBAFEDB226700D400C6377A /* MutCommunicator.swift */; };
+		0CC1BCC3225EFDC500D68616 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC1BCC2225EFDC500D68616 /* SettingsViewController.swift */; };
+		0CC1BCC5225F11CC00D68616 /* Communicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC1BCC4225F11CC00D68616 /* Communicator.swift */; };
+		0CC1BCC9225F161000D68616 /* Gui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC1BCC8225F161000D68616 /* Gui.swift */; };
+		0CCEAC7B2261B29000E39A39 /* ProjectRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCEAC7A2261B29000E39A39 /* ProjectRequest.swift */; };
+		0CCEAC7E2261B33D00E39A39 /* CommunicationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCEAC7D2261B33D00E39A39 /* CommunicationRequest.swift */; };
+		0CCEAC9322620C3800E39A39 /* DroneStatusRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCEAC9222620C3800E39A39 /* DroneStatusRequestTest.swift */; };
+		0CDD3D1E22687A4600A28516 /* DroneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDD3D1D22687A4600A28516 /* DroneTableViewController.swift */; };
+		0CDD3D2022687A5700A28516 /* DroneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDD3D1F22687A5700A28516 /* DroneTableViewCell.swift */; };
+		0CDD3D242268984900A28516 /* DroneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDD3D232268984900A28516 /* DroneViewController.swift */; };
+		0CDDBAB8226AED65009066FD /* TelegramProjectRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDBAB7226AED65009066FD /* TelegramProjectRefresh.swift */; };
+		0CDDBABA226B3D43009066FD /* MapHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDBAB9226B3D43009066FD /* MapHelper.swift */; };
+		0CF54D69225E16780089B34D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF54D68225E16780089B34D /* AppDelegate.swift */; };
+		0CF54D6B225E16780089B34D /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF54D6A225E16780089B34D /* ProjectViewController.swift */; };
+		0CF54D6D225E16780089B34D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF54D6C225E16780089B34D /* MapViewController.swift */; };
+		0CF54D70225E16780089B34D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CF54D6E225E16780089B34D /* Main.storyboard */; };
+		0CF54D72225E167A0089B34D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CF54D71225E167A0089B34D /* Assets.xcassets */; };
+		0CF54D75225E167A0089B34D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CF54D73225E167A0089B34D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CCEAC882261FCCD00E39A39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CF54D5D225E16770089B34D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CF54D64225E16770089B34D;
+			remoteInfo = amon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0C80F29022703E6D00EB6A8E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0C80F322227088B900EB6A8E /* EasyGUI.framework in Embed Frameworks */,
+				0C682F2C2283FD7400176EA0 /* amongst.framework in Embed Frameworks */,
+				0C80F28F22703E6D00EB6A8E /* EasyHTTP.framework in Embed Frameworks */,
+				0C80F2B02270451E00EB6A8E /* EasyLocation.framework in Embed Frameworks */,
+				0C80F2FE227055F900EB6A8E /* EasyTelegram.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C11B3822260481D002C723B /* TelegramCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramCommunicator.swift; sourceTree = "<group>"; };
+		0C11B39522609CD8002C723B /* Drone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drone.swift; sourceTree = "<group>"; };
+		0C11B3992260A1AB002C723B /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		0C11B39B2260AE76002C723B /* DroneRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneRequest.swift; sourceTree = "<group>"; };
+		0C11B39D2260B394002C723B /* TelegramDroneStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramDroneStatus.swift; sourceTree = "<group>"; };
+		0C3AB9662265BF1A007F7DD0 /* TelegramPhotoDownloadTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramPhotoDownloadTest.swift; sourceTree = "<group>"; };
+		0C3AB9682265D646007F7DD0 /* TelegramProjectAbort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramProjectAbort.swift; sourceTree = "<group>"; };
+		0C3AB96A2265D9FD007F7DD0 /* AbortProjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbortProjectTest.swift; sourceTree = "<group>"; };
+		0C456BC3226454580086BEAE /* DroneListRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneListRequestTest.swift; sourceTree = "<group>"; };
+		0C456BC522645B0A0086BEAE /* TelegramProjectSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramProjectSetup.swift; sourceTree = "<group>"; };
+		0C456BC7226486B50086BEAE /* SetupDronesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupDronesTest.swift; sourceTree = "<group>"; };
+		0C456BC922649F6D0086BEAE /* TelegramProjectStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramProjectStart.swift; sourceTree = "<group>"; };
+		0C456BCB2264A0A70086BEAE /* TelegramEmployedDronesTaskWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramEmployedDronesTaskWorker.swift; sourceTree = "<group>"; };
+		0C456BCD2264AB2E0086BEAE /* StartDronesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDronesTest.swift; sourceTree = "<group>"; };
+		0C456BCF2264B58D0086BEAE /* TelegramDronePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramDronePhoto.swift; sourceTree = "<group>"; };
+		0C682F2A2283FD7400176EA0 /* amongst.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = amongst.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C80F28D22703E6D00EB6A8E /* EasyHTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasyHTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C80F2AE2270451E00EB6A8E /* EasyLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasyLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C80F2FC227055F900EB6A8E /* EasyTelegram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasyTelegram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C80F320227088B900EB6A8E /* EasyGUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasyGUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C80F32B22708E1000EB6A8E /* TelegramDroneTaskWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramDroneTaskWorker.swift; sourceTree = "<group>"; };
+		0CBAFEDB226700D400C6377A /* MutCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutCommunicator.swift; sourceTree = "<group>"; };
+		0CC1BCC2225EFDC500D68616 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0CC1BCC4225F11CC00D68616 /* Communicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Communicator.swift; sourceTree = "<group>"; };
+		0CC1BCC8225F161000D68616 /* Gui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gui.swift; sourceTree = "<group>"; };
+		0CCEAC7A2261B29000E39A39 /* ProjectRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRequest.swift; sourceTree = "<group>"; };
+		0CCEAC7D2261B33D00E39A39 /* CommunicationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationRequest.swift; sourceTree = "<group>"; };
+		0CCEAC832261FCCD00E39A39 /* amonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = amonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CCEAC9222620C3800E39A39 /* DroneStatusRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneStatusRequestTest.swift; sourceTree = "<group>"; };
+		0CDD3D1D22687A4600A28516 /* DroneTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneTableViewController.swift; sourceTree = "<group>"; };
+		0CDD3D1F22687A5700A28516 /* DroneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneTableViewCell.swift; sourceTree = "<group>"; };
+		0CDD3D232268984900A28516 /* DroneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneViewController.swift; sourceTree = "<group>"; };
+		0CDDBAB7226AED65009066FD /* TelegramProjectRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramProjectRefresh.swift; sourceTree = "<group>"; };
+		0CDDBAB9226B3D43009066FD /* MapHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHelper.swift; sourceTree = "<group>"; };
+		0CF54D65225E16780089B34D /* amon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CF54D68225E16780089B34D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CF54D6A225E16780089B34D /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
+		0CF54D6C225E16780089B34D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0CF54D6F225E16780089B34D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0CF54D71225E167A0089B34D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CF54D74225E167A0089B34D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CF54D76225E167A0089B34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CCEAC802261FCCD00E39A39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CF54D62225E16770089B34D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C80F321227088B900EB6A8E /* EasyGUI.framework in Frameworks */,
+				0C682F2B2283FD7400176EA0 /* amongst.framework in Frameworks */,
+				0C80F28E22703E6D00EB6A8E /* EasyHTTP.framework in Frameworks */,
+				0C80F2AF2270451E00EB6A8E /* EasyLocation.framework in Frameworks */,
+				0C80F2FD227055F900EB6A8E /* EasyTelegram.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C11B39422608768002C723B /* Quest */ = {
+			isa = PBXGroup;
+			children = (
+				0C11B39522609CD8002C723B /* Drone.swift */,
+				0C11B3992260A1AB002C723B /* Project.swift */,
+			);
+			path = Quest;
+			sourceTree = "<group>";
+		};
+		0C80F32922708DCE00EB6A8E /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				0C80F32B22708E1000EB6A8E /* TelegramDroneTaskWorker.swift */,
+				0C11B39D2260B394002C723B /* TelegramDroneStatus.swift */,
+				0C456BCF2264B58D0086BEAE /* TelegramDronePhoto.swift */,
+			);
+			path = Single;
+			sourceTree = "<group>";
+		};
+		0C80F32A22708DD800EB6A8E /* Multi */ = {
+			isa = PBXGroup;
+			children = (
+				0C456BCB2264A0A70086BEAE /* TelegramEmployedDronesTaskWorker.swift */,
+				0C456BC522645B0A0086BEAE /* TelegramProjectSetup.swift */,
+				0C456BC922649F6D0086BEAE /* TelegramProjectStart.swift */,
+				0CDDBAB7226AED65009066FD /* TelegramProjectRefresh.swift */,
+				0C3AB9682265D646007F7DD0 /* TelegramProjectAbort.swift */,
+			);
+			path = Multi;
+			sourceTree = "<group>";
+		};
+		0CBAFEDA2267008B00C6377A /* Mut */ = {
+			isa = PBXGroup;
+			children = (
+				0CBAFEDB226700D400C6377A /* MutCommunicator.swift */,
+			);
+			path = Mut;
+			sourceTree = "<group>";
+		};
+		0CC1BCCE225F322800D68616 /* Telegram */ = {
+			isa = PBXGroup;
+			children = (
+				0C80F32A22708DD800EB6A8E /* Multi */,
+				0C80F32922708DCE00EB6A8E /* Single */,
+				0C11B3822260481D002C723B /* TelegramCommunicator.swift */,
+			);
+			path = Telegram;
+			sourceTree = "<group>";
+		};
+		0CC1BCCF225F323B00D68616 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				0CDD3D1C226879FF00A28516 /* Project */,
+				0CF54D6C225E16780089B34D /* MapViewController.swift */,
+				0CC1BCC2225EFDC500D68616 /* SettingsViewController.swift */,
+				0CC1BCC8225F161000D68616 /* Gui.swift */,
+				0CDDBAB9226B3D43009066FD /* MapHelper.swift */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		0CC1BCD0225F326800D68616 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				0CBAFEDA2267008B00C6377A /* Mut */,
+				0CC1BCC4225F11CC00D68616 /* Communicator.swift */,
+				0CCEAC7C2261B2FF00E39A39 /* Request */,
+				0CC1BCCE225F322800D68616 /* Telegram */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		0CCEAC7C2261B2FF00E39A39 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				0C11B39B2260AE76002C723B /* DroneRequest.swift */,
+				0CCEAC7A2261B29000E39A39 /* ProjectRequest.swift */,
+				0CCEAC7D2261B33D00E39A39 /* CommunicationRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		0CCEAC9122620C0300E39A39 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				0CCEAC9222620C3800E39A39 /* DroneStatusRequestTest.swift */,
+				0C456BC3226454580086BEAE /* DroneListRequestTest.swift */,
+				0C456BC7226486B50086BEAE /* SetupDronesTest.swift */,
+				0C456BCD2264AB2E0086BEAE /* StartDronesTest.swift */,
+				0C3AB9662265BF1A007F7DD0 /* TelegramPhotoDownloadTest.swift */,
+				0C3AB96A2265D9FD007F7DD0 /* AbortProjectTest.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		0CDD3D1C226879FF00A28516 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				0CF54D6A225E16780089B34D /* ProjectViewController.swift */,
+				0CDD3D1D22687A4600A28516 /* DroneTableViewController.swift */,
+				0CDD3D1F22687A5700A28516 /* DroneTableViewCell.swift */,
+				0CDD3D232268984900A28516 /* DroneViewController.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		0CF54D5C225E16770089B34D = {
+			isa = PBXGroup;
+			children = (
+				0C682F2A2283FD7400176EA0 /* amongst.framework */,
+				0C80F320227088B900EB6A8E /* EasyGUI.framework */,
+				0C80F2FC227055F900EB6A8E /* EasyTelegram.framework */,
+				0C80F2AE2270451E00EB6A8E /* EasyLocation.framework */,
+				0C80F28D22703E6D00EB6A8E /* EasyHTTP.framework */,
+				0CF54D67225E16780089B34D /* amon */,
+				0CF54D66225E16780089B34D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0CF54D66225E16780089B34D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CF54D65225E16780089B34D /* amon.app */,
+				0CCEAC832261FCCD00E39A39 /* amonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CF54D67225E16780089B34D /* amon */ = {
+			isa = PBXGroup;
+			children = (
+				0C11B39422608768002C723B /* Quest */,
+				0CC1BCD0225F326800D68616 /* Communication */,
+				0CC1BCCF225F323B00D68616 /* GUI */,
+				0CCEAC9122620C0300E39A39 /* Test */,
+				0CF54D68225E16780089B34D /* AppDelegate.swift */,
+				0CF54D6E225E16780089B34D /* Main.storyboard */,
+				0CF54D71225E167A0089B34D /* Assets.xcassets */,
+				0CF54D73225E167A0089B34D /* LaunchScreen.storyboard */,
+				0CF54D76225E167A0089B34D /* Info.plist */,
+			);
+			path = amon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CCEAC822261FCCD00E39A39 /* amonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CCEAC8A2261FCCD00E39A39 /* Build configuration list for PBXNativeTarget "amonTests" */;
+			buildPhases = (
+				0CCEAC7F2261FCCD00E39A39 /* Sources */,
+				0CCEAC802261FCCD00E39A39 /* Frameworks */,
+				0CCEAC812261FCCD00E39A39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CCEAC892261FCCD00E39A39 /* PBXTargetDependency */,
+			);
+			name = amonTests;
+			productName = amonTests;
+			productReference = 0CCEAC832261FCCD00E39A39 /* amonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0CF54D64225E16770089B34D /* amon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CF54D79225E167A0089B34D /* Build configuration list for PBXNativeTarget "amon" */;
+			buildPhases = (
+				0CF54D61225E16770089B34D /* Sources */,
+				0CF54D62225E16770089B34D /* Frameworks */,
+				0CF54D63225E16770089B34D /* Resources */,
+				0C80F29022703E6D00EB6A8E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = amon;
+			productName = amon;
+			productReference = 0CF54D65225E16780089B34D /* amon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CF54D5D225E16770089B34D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Dr. Kerem Koseoglu";
+				TargetAttributes = {
+					0CCEAC822261FCCD00E39A39 = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+						TestTargetID = 0CF54D64225E16770089B34D;
+					};
+					0CF54D64225E16770089B34D = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 0CF54D60225E16770089B34D /* Build configuration list for PBXProject "amon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CF54D5C225E16770089B34D;
+			productRefGroup = 0CF54D66225E16780089B34D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CF54D64225E16770089B34D /* amon */,
+				0CCEAC822261FCCD00E39A39 /* amonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CCEAC812261FCCD00E39A39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CF54D63225E16770089B34D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CF54D75225E167A0089B34D /* LaunchScreen.storyboard in Resources */,
+				0CF54D72225E167A0089B34D /* Assets.xcassets in Resources */,
+				0CF54D70225E16780089B34D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CCEAC7F2261FCCD00E39A39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CF54D61225E16770089B34D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC1BCC5225F11CC00D68616 /* Communicator.swift in Sources */,
+				0CCEAC9322620C3800E39A39 /* DroneStatusRequestTest.swift in Sources */,
+				0CDDBAB8226AED65009066FD /* TelegramProjectRefresh.swift in Sources */,
+				0C3AB9672265BF1A007F7DD0 /* TelegramPhotoDownloadTest.swift in Sources */,
+				0CDDBABA226B3D43009066FD /* MapHelper.swift in Sources */,
+				0CF54D6D225E16780089B34D /* MapViewController.swift in Sources */,
+				0CCEAC7E2261B33D00E39A39 /* CommunicationRequest.swift in Sources */,
+				0CDD3D1E22687A4600A28516 /* DroneTableViewController.swift in Sources */,
+				0C456BCC2264A0A70086BEAE /* TelegramEmployedDronesTaskWorker.swift in Sources */,
+				0C456BCE2264AB2E0086BEAE /* StartDronesTest.swift in Sources */,
+				0C456BD02264B58D0086BEAE /* TelegramDronePhoto.swift in Sources */,
+				0C3AB9692265D646007F7DD0 /* TelegramProjectAbort.swift in Sources */,
+				0C456BC4226454580086BEAE /* DroneListRequestTest.swift in Sources */,
+				0C3AB96B2265D9FD007F7DD0 /* AbortProjectTest.swift in Sources */,
+				0C80F32C22708E1000EB6A8E /* TelegramDroneTaskWorker.swift in Sources */,
+				0C456BC622645B0A0086BEAE /* TelegramProjectSetup.swift in Sources */,
+				0CC1BCC9225F161000D68616 /* Gui.swift in Sources */,
+				0CDD3D242268984900A28516 /* DroneViewController.swift in Sources */,
+				0C11B3832260481D002C723B /* TelegramCommunicator.swift in Sources */,
+				0CF54D69225E16780089B34D /* AppDelegate.swift in Sources */,
+				0C456BC8226486B50086BEAE /* SetupDronesTest.swift in Sources */,
+				0CCEAC7B2261B29000E39A39 /* ProjectRequest.swift in Sources */,
+				0CF54D6B225E16780089B34D /* ProjectViewController.swift in Sources */,
+				0CC1BCC3225EFDC500D68616 /* SettingsViewController.swift in Sources */,
+				0C11B39622609CD8002C723B /* Drone.swift in Sources */,
+				0CDD3D2022687A5700A28516 /* DroneTableViewCell.swift in Sources */,
+				0C456BCA22649F6D0086BEAE /* TelegramProjectStart.swift in Sources */,
+				0C11B39C2260AE76002C723B /* DroneRequest.swift in Sources */,
+				0C11B39E2260B394002C723B /* TelegramDroneStatus.swift in Sources */,
+				0C11B39A2260A1AB002C723B /* Project.swift in Sources */,
+				0CBAFEDC226700D400C6377A /* MutCommunicator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CCEAC892261FCCD00E39A39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CF54D64225E16770089B34D /* amon */;
+			targetProxy = 0CCEAC882261FCCD00E39A39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0CF54D6E225E16780089B34D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CF54D6F225E16780089B34D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0CF54D73225E167A0089B34D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CF54D74225E167A0089B34D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CCEAC8B2261FCCD00E39A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25T695DT32;
+				INFOPLIST_FILE = amonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.keremkoseoglu.amonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/amon.app/amon";
+			};
+			name = Debug;
+		};
+		0CCEAC8C2261FCCD00E39A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25T695DT32;
+				INFOPLIST_FILE = amonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.keremkoseoglu.amonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/amon.app/amon";
+			};
+			name = Release;
+		};
+		0CF54D77225E167A0089B34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0CF54D78225E167A0089B34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CF54D7A225E167A0089B34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25T695DT32;
+				INFOPLIST_FILE = amon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.keremkoseoglu.amon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CF54D7B225E167A0089B34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25T695DT32;
+				INFOPLIST_FILE = amon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.keremkoseoglu.amon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CCEAC8A2261FCCD00E39A39 /* Build configuration list for PBXNativeTarget "amonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CCEAC8B2261FCCD00E39A39 /* Debug */,
+				0CCEAC8C2261FCCD00E39A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CF54D60225E16770089B34D /* Build configuration list for PBXProject "amon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CF54D77225E167A0089B34D /* Debug */,
+				0CF54D78225E167A0089B34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CF54D79225E167A0089B34D /* Build configuration list for PBXNativeTarget "amon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CF54D7A225E167A0089B34D /* Debug */,
+				0CF54D7B225E167A0089B34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CF54D5D225E16770089B34D /* Project object */;
+}
